@@ -1,0 +1,20 @@
+<config
+        xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+        xmlns='http://www.ehcache.org/v3'
+        xsi:schemaLocation="
+            http://www.ehcache.org/v3
+            http://www.ehcache.org/schema/ehcache-core-3.7.xsd">
+    <persistence directory="spring-boot-ehcache/cache"/>
+
+    <cache alias="distance">
+        <key-type>java.util.List</key-type>
+        <value-type>java.lang.Double</value-type>
+        <expiry>
+            <ttl unit="days">7</ttl>
+        </expiry>
+
+        <resources>
+            <heap unit="MB">10</heap>
+        </resources>
+    </cache>
+</config>
