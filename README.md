@@ -40,3 +40,5 @@ With that tools using http://localhost:8080/actuator/metrics you can check metri
    
 
 3. In some cases, we would like to change the provider, for example for tests or different cluster. How can we achieve this?
+- From my perspective i would be use pattern Factory and create configure files in which we can configure providers for different envs.
+With this we can have possibility to configure providers for different envs.
